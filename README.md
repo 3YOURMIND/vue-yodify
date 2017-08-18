@@ -33,6 +33,9 @@ Vue.use(VueToaster)
   autoCloseTime="2000"
 ></yoda-vuetoaster>
 ```
+
+![](img/preview.gif)
+
 ### Props config
 
 ```js
