@@ -1,6 +1,6 @@
 {
-  "name": "vue-yodify",
-  "version": "0.0.1",
+  "name": "@3yourmind/vue-yodify",
+  "version": "0.0.1-beta",
   "description": "A Vue.js component module",
   "author": "Kevin Peters <kpe@3yourmind.com>",
   "main": "dist/index.js",
