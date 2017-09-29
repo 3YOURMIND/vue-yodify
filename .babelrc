@@ -1,9 +1,28 @@
 {
-    "presets": [
-      ["env", {
+  "presets": [
+    [
+      "env",
+      {
         "targets": {
           "browsers": ["last 2 versions", "safari >= 7"]
         }
-      }]
+      }
     ]
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "@": "./src"
+            }
+          }
+        ]
+      ]
+    }
   }
+}

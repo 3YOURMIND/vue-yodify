@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize",
+    "test": "node node_modules/.bin/jest"
   },
   "keywords": [
     "vue",
@@ -21,17 +22,33 @@
     "vue": "^2.4.4"
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-module-resolver": "^2.7.1",
     "babel-preset-env": "^1.6.0",
     "cross-env": "^5.0.5",
     "eslint": "^3.19.0",
     "eslint-plugin-vue": "beta",
     "file-loader": "^0.11.2",
+    "jest": "^21.2.1",
+    "jest-vue-preprocessor": "^1.2.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "vue-cli": "^2.8.2",
     "vue-loader": "^13.0.5",
+    "vue-test-utils": "1.0.0-beta",
     "vue-webpack-loaders": "^1.0.6",
     "webpack": "^3.6.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
   }
 }
