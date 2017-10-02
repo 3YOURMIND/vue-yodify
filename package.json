@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize",
-    "test": "node node_modules/.bin/jest"
+    "test": "jest"
   },
   "keywords": [
     "vue",
