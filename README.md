@@ -69,12 +69,12 @@ this.$yodify({
 Before getting into architecture, you should make sure to understand the Vue.js plugin system which is documented [here](https://vuejs.org/v2/guide/plugins.html).
 
 <span>
-  <img style="max-width: 400px;" src="./docs/architecture.svg" alt="architecture of vue-yodify"/>
+  <img style="max-width: 400px;" src="./docs/architecture.png" alt="architecture of vue-yodify"/>
 </span>
 
 ## Contributors
 
-<table><thead><tr><th align="center"><a href="https://github.com/igeligel"><img src="https://avatars1.githubusercontent.com/u/12736734?v=4" width="100px;" style="max-width:100%;"><br><sub>igeligel</sub></a><br><p>Contributions: 9</p></th><th align="center"><a href="https://github.com/ostoc"><img src="https://avatars3.githubusercontent.com/u/3025708?v=4" width="100px;" style="max-width:100%;"><br><sub>ostoc</sub></a><br><p>Contributions: 4</p></th></tbody></table>
+<table><thead><tr><th align="center"><a href="https://github.com/igeligel"><img src="https://avatars1.githubusercontent.com/u/12736734?v=4" width="100px;" style="max-width:100%;"><br><sub>igeligel</sub></a><br><p>Contributions: 11</p></th><th align="center"><a href="https://github.com/ostoc"><img src="https://avatars3.githubusercontent.com/u/3025708?v=4" width="100px;" style="max-width:100%;"><br><sub>ostoc</sub></a><br><p>Contributions: 4</p></th></tbody></table>
 
 ## License
 
