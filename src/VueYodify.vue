@@ -57,6 +57,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$color-success: #65A200;
+$color-error: #FF3535;
+$color-info: #23509a;
+$color-warn: yellow;
+
 .notification__container {
   z-index: 9999;
   top: 0;
@@ -106,27 +111,27 @@ export default {
 }
 
 .icon--success {
-  background-color: #65A200;
+  background-color: $color-success;
 }
 
 .icon--error {
-  background-color: #FF3535;
+  background-color: $color-error;
 }
 
 .icon--info {
-  background-color: #23509a;
+  background-color: $color-info;
 }
 
 .icon--warn {
-  background-color: yellow;
+  background-color: $color-warn;
 }
 
 .icon svg {
-  position:absolute;
-  top:50%;
-  bottom:50%;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
   left: 4%;
-  transform:translate(0, -50%);
+  transform: translate(0, -50%);
   height: 24px;
   width: 24px;
 }
