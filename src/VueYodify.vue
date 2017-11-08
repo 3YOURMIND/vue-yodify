@@ -1,5 +1,5 @@
 <template>
-  <div class="notification__container">
+  <div class="vue-yodify">
     <div
       class="notification"
       v-for="notification in queue"
@@ -8,7 +8,7 @@
         <bell-icon></bell-icon>
       </div>
       <div class="content" v-text="notification.message"></div>
-      <div class="yoda-close" @click="deleteNotification(notification.id)">
+      <div class="close" @click="deleteNotification(notification.id)">
         &#x2715;
       </div>
     </div>
@@ -62,7 +62,7 @@ $color-error: #FF3535;
 $color-info: #23509a;
 $color-warn: yellow;
 
-.notification__container {
+.vue-yodify {
   z-index: 9999;
   top: 0;
   right: 0;
@@ -75,26 +75,26 @@ $color-warn: yellow;
   margin-bottom: 10px;
 }
 
-.yoda-close {
+.close {
   right: 1em;
   top: 50%;
-  margin-top: -12px;
+  margin-top: -.8em;
+  line-height: 1.6em;
   position: absolute;
-  width: 24px;
+  width: 1.6em;
   text-align: center;
   vertical-align: middle;
-  height: 24px;
   display: inline-block;
   cursor: pointer;
 }
 
-.yoda-close:hover {
-  border-radius: 10px;
+.close:hover {
+  border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .notification {
-  width: 400px;
+  width: 448px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: table;
@@ -102,11 +102,12 @@ $color-warn: yellow;
 }
 
 .icon {
-  width: 55px;
+  width: 48px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   display: table-cell;
   padding-top: 30px;
+  box-sizing: border-box;
   padding-bottom: 30px;
 }
 
@@ -129,19 +130,19 @@ $color-warn: yellow;
 .icon svg {
   position: absolute;
   top: 50%;
-  bottom: 50%;
-  left: 4%;
+  left: 12px;
   transform: translate(0, -50%);
   height: 24px;
   width: 24px;
 }
 
 .content {
-  padding-left: 1.5em;
-  padding-right: 3em;
+  width: 400px;
+  padding: 0 3em 0 1em;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   display: table-cell;
+  box-sizing: border-box;
   background-color: white;
   vertical-align: middle;
   padding-top: 0.93em;
