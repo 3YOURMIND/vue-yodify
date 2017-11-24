@@ -3,11 +3,12 @@
     <div
       class="notification"
       v-for="notification in queue"
-      :key="notification.id">
+      :key="notification.id"
+    >
       <div :class="iconClass(notification.type)">
-        <bell-icon></bell-icon>
+        <BellIcon />
       </div>
-      <div class="content" v-text="notification.message"></div>
+      <div class="content" v-text="notification.message" />
       <div class="close" @click="deleteNotification(notification.id)">
         &#x2715;
       </div>
