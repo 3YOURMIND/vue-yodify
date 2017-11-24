@@ -57,8 +57,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color-success: #65A200;
-$color-error: #FF3535;
+$color-success: #65a200;
+$color-error: #ff3535;
 $color-info: #23509a;
 $color-warn: yellow;
 
@@ -78,7 +78,7 @@ $color-warn: yellow;
 .close {
   right: 1em;
   top: 50%;
-  margin-top: -.8em;
+  margin-top: -0.8em;
   line-height: 1.6em;
   position: absolute;
   width: 1.6em;
