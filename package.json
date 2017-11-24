@@ -31,7 +31,7 @@
     "css-loader": "^0.28.7",
     "eslint": "^3.19.0",
     "eslint-plugin-vue": "beta",
-    "file-loader": "^0.11.2",
+    "file-loader": "^1.1.5",
     "jest": "^21.2.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
