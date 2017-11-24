@@ -40,8 +40,8 @@ Then you need to register a global component in your app so the library can find
 ```html
 <template>
   <div id="app">
-    <vue-yodify></vue-yodify>
-    <router-view></router-view>
+    <VueYodify />
+    <router-view />
   </div>
 </template>
 
@@ -50,9 +50,6 @@ export default {
   name: 'app',
 };
 </script>
-
-<style scoped>
-</style>
 ```
 
 After registering the component you can call it globally by using the Vue instance in the script part of a component.
