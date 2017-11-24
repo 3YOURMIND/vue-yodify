@@ -8,7 +8,7 @@
 
 | Name | Version |                                            Information                                             |
 | ---- | ------- | -------------------------------------------------------------------------------------------------- |
-| vue  | ^2.4.4  | ![](https://img.shields.io/npm/v/vue.svg) ![](https://img.shields.io/github/license/vuejs/vue.svg) |
+| vue  | ^2.5.8  | ![](https://img.shields.io/npm/v/vue.svg) ![](https://img.shields.io/github/license/vuejs/vue.svg) |
 
 ## Installation
 
