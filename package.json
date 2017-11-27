@@ -19,7 +19,7 @@
     "dist/"
   ],
   "dependencies": {
-    "vue": "^2.5.8"
+    "vue": "^2.5.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -36,9 +36,9 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "vue-cli": "^2.9.1",
-    "vue-jest": "^1.1.0",
+    "vue-jest": "^1.2.0",
     "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.5.8",
+    "vue-template-compiler": "^2.5.9",
     "vue-template-es2015-compiler": "^1.6.0",
     "vue-test-utils": "1.0.0-beta.6",
     "vue-webpack-loaders": "^1.0.6",
