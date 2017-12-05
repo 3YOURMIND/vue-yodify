@@ -1368,7 +1368,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-coffee-script@^1.12.4:
+coffee-script@1.12.7, coffee-script@^1.12.4:
   version "1.12.7"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.12.7.tgz#c05dae0cb79591d05b3070a8433a98c9a89ccc53"
 
@@ -5900,13 +5900,14 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-cli@^2.9.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/vue-cli/-/vue-cli-2.9.1.tgz#e171348e7ecf74a34895be5e15ae1b56eabf5ffe"
+vue-cli@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/vue-cli/-/vue-cli-2.9.2.tgz#fb247c0f41c50c865e8d77caba18eb2b3936372c"
   dependencies:
     uid "0.0.2"
     async "^2.4.0"
     chalk "^2.1.0"
+    coffee-script "1.12.7"
     commander "^2.9.0"
     consolidate "^0.14.0"
     download-git-repo "^1.0.1"
@@ -6074,9 +6075,9 @@ webpack-sources@^1.0.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.8.1.tgz#b16968a81100abe61608b0153c9159ef8bb2bd83"
+webpack@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.10.0.tgz#5291b875078cf2abf42bdd23afe3f8f96c17d725"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
