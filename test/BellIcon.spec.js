@@ -1,4 +1,4 @@
-import { mount } from 'vue-test-utils';
+import { mount } from '@vue/test-utils';
 import BellIcon from '@/BellIcon';
 
 describe('General tests', () => {
