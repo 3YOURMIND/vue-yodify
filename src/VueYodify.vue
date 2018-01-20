@@ -45,7 +45,7 @@ export default {
       }, 3 * 1000);
     },
     deleteNotification(id) {
-      this.queue = this.queue.filter(notification => notification.id !== id);
+      this.queue = this.queue.filter((notification) => notification.id !== id);
     },
     iconClass(notificationStatus) {
       return `icon icon--${notificationStatus}`;

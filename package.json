@@ -6,18 +6,16 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize",
+    "build":
+      "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize",
+    "precommit": "lint-staged",
     "test": "jest"
   },
-  "keywords": [
-    "vue",
-    "component",
-    "notification",
-    "responsive"
-  ],
-  "files": [
-    "dist/"
-  ],
+  "lint-staged": {
+    "*.{js,json,css,md,vue}": ["prettier --write", "git add"]
+  },
+  "keywords": ["vue", "component", "notification", "responsive"],
+  "files": ["dist/"],
   "dependencies": {
     "vue": "^2.5.13"
   },
@@ -33,8 +31,11 @@
     "eslint": "^4.16.0",
     "eslint-plugin-vue": "4.2.0",
     "file-loader": "^1.1.6",
+    "husky": "^0.14.3",
     "jest": "^22.1.4",
+    "lint-staged": "^6.0.1",
     "node-sass": "^4.7.2",
+    "prettier": "^1.10.2",
     "sass-loader": "^6.0.6",
     "vue-cli": "^2.9.2",
     "vue-jest": "^1.4.0",
@@ -45,11 +46,7 @@
     "webpack": "^3.10.0"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "vue"
-    ],
+    "moduleFileExtensions": ["js", "json", "vue"],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
