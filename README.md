@@ -40,7 +40,7 @@ Then you need to register a global component in your app so the library can find
 ```html
 <template>
   <div id="app">
-    <VueYodify />
+    <vue-yodify />
     <router-view />
   </div>
 </template>
