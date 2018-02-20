@@ -6,7 +6,7 @@
 
 ## Dependencies
 
-| Name | Version |                                            Information                                             |
+| Name | Version | Information                                                                                        |
 | ---- | ------- | -------------------------------------------------------------------------------------------------- |
 | vue  | ^2.5.8  | ![](https://img.shields.io/npm/v/vue.svg) ![](https://img.shields.io/github/license/vuejs/vue.svg) |
 
@@ -26,7 +26,10 @@ npm install @3yourmind/vue-yodify
 
 ## How to use
 
-You need to register this library as a plugin. So you need to find the file where you are registering Vue.js. In the most common case this will be the file `src/main.js`. Inside this file you need to import this library and bind it to Vue.js.
+You need to register this library as a plugin. So you need to find the file
+where you are registering Vue.js. In the most common case this will be the file
+`src/main.js`. Inside this file you need to import this library and bind it to
+Vue.js.
 
 ```javascript
 import Vue from 'vue';
@@ -35,12 +38,14 @@ import VueYodify from '@3yourmind/vue-yodify';
 Vue.use(VueYodify);
 ```
 
-Then you need to register a global component in your app so the library can find the component somehow. To do this go to your root component and extend it by using the component once.
+Then you need to register a global component in your app so the library can find
+the component somehow. To do this go to your root component and extend it by
+using the component once.
 
 ```html
 <template>
   <div id="app">
-    <VueYodify />
+    <vue-yodify />
     <router-view />
   </div>
 </template>
@@ -52,18 +57,21 @@ export default {
 </script>
 ```
 
-After registering the component you can call it globally by using the Vue instance in the script part of a component.
+After registering the component you can call it globally by using the Vue
+instance in the script part of a component.
 
 ```js
 this.$yodify({
   text: 'This was successful :)',
-  type: 'success'
+  type: 'success',
 });
 ```
 
 ## Architecture
 
-Before getting into architecture, you should make sure to understand the Vue.js plugin system which is documented [here](https://vuejs.org/v2/guide/plugins.html).
+Before getting into architecture, you should make sure to understand the Vue.js
+plugin system which is documented
+[here](https://vuejs.org/v2/guide/plugins.html).
 
 <span>
   <img style="max-width: 400px;" src="./docs/architecture.png" alt="architecture of vue-yodify"/>
@@ -75,4 +83,4 @@ Before getting into architecture, you should make sure to understand the Vue.js 
 
 ## License
 
-*vue-yodify* is realeased under the [MIT License](./LICENSE.md).
+_vue-yodify_ is realeased under the [MIT License](./LICENSE.md).

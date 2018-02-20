@@ -1,5 +1,5 @@
 import VueYodifyComponent from './VueYodify.vue';
-import test from './events';
+import EventBridge from './EventBridge';
 
 const VueYodify = {};
 
@@ -20,7 +20,7 @@ VueYodify.install = function install(Vue) {
    *  - info
    */
   Vue.prototype.$yodify = (payload) => {
-    test.events.$emit('vue-yodify', payload);
+    EventBridge.events.$emit('vue-yodify', payload);
   };
 };
 /* eslint-enable no-param-reassign */

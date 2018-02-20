@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import EventsBridge from './events';
+import EventBridge from './EventBridge';
 import BellIcon from './BellIcon.vue';
 import IdGenerator from './id-generator';
 
@@ -52,7 +52,7 @@ export default {
     },
   },
   mounted() {
-    EventsBridge.events.$on('vue-yodify', this.addNotification);
+    EventBridge.events.$on('vue-yodify', this.addNotification);
   },
 };
 </script>
