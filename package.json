@@ -20,37 +20,36 @@
     "vue": "^2.5.13"
   },
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.10",
+    "@vue/test-utils": "^1.0.0-beta.12",
     "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
+    "babel-jest": "^22.4.0",
     "babel-loader": "^7.1.2",
-    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-module-resolver": "^3.1.0",
     "babel-preset-env": "^1.6.1",
     "cross-env": "^5.1.3",
     "css-loader": "^0.28.9",
-    "eslint": "^4.16.0",
-    "eslint-plugin-vue": "4.2.0",
-    "file-loader": "^1.1.6",
+    "eslint": "^4.18.0",
+    "eslint-plugin-vue": "4.2.2",
+    "file-loader": "^1.1.8",
     "husky": "^0.14.3",
-    "jest": "^22.1.4",
-    "lint-staged": "^6.0.1",
+    "jest": "^22.4.0",
+    "lint-staged": "^6.1.1",
     "node-sass": "^4.7.2",
     "prettier": "^1.10.2",
     "sass-loader": "^6.0.6",
-    "vue-cli": "^2.9.2",
-    "vue-jest": "^1.4.0",
-    "vue-loader": "^13.7.0",
+    "vue-cli": "^2.9.3",
+    "vue-jest": "^2.1.0",
+    "vue-loader": "^14.1.1",
     "vue-template-compiler": "^2.5.13",
     "vue-template-es2015-compiler": "^1.6.0",
     "vue-webpack-loaders": "^1.0.6",
-    "webpack": "^3.10.0"
+    "webpack": "^3.11.0"
   },
   "jest": {
     "moduleFileExtensions": ["js", "json", "vue"],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    },
-    "mapCoverage": true
+    }
   }
 }
