@@ -21,7 +21,7 @@ export default {
 	props: {
 		type: { required: true, type: String },
 	},
-}
+};
 </script>
 
 <style lang="scss" scoped>

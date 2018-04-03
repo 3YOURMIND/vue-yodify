@@ -17,34 +17,34 @@
 </template>
 
 <script>
-import BellIcon from './BellIcon.vue'
-import CloseIcon from './CloseIcon.vue'
+import BellIcon from './BellIcon.vue';
+import CloseIcon from './CloseIcon.vue';
 
-import { generateId, notId } from '../utilities.js'
+import { generateId, notId } from '../utilities.js';
 
 export default {
 	name: 'VueYodify',
 	components: { BellIcon, CloseIcon },
 	data() {
-		return { queue: [] }
+		return { queue: [] };
 	},
 	methods: {
 		addNotification({ id = generateId(), text, type, duration = 3000 }) {
-			this.queue.push({ id, text, type })
+			this.queue.push({ id, text, type });
 
-			window.setTimeout(() => this.deleteNotification(id), duration)
+			window.setTimeout(() => this.deleteNotification(id), duration);
 		},
 		deleteNotification(id) {
-			this.queue = this.queue.filter(notId({ id }))
+			this.queue = this.queue.filter(notId({ id }));
 		},
 		iconClass(notificationStatus) {
-			return `vue-yodify__icon vue-yodify__icon--${notificationStatus}`
+			return `vue-yodify__icon vue-yodify__icon--${notificationStatus}`;
 		},
 	},
 	mounted() {
-		this.registerEventBridge()
+		this.registerEventBridge();
 	},
-}
+};
 </script>
 
 <style lang="scss" scoped>

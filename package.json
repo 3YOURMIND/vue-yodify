@@ -1,14 +1,8 @@
 {
 	"babel": {
-		"presets": [
-			"@vue/app"
-		]
+		"presets": ["@vue/app"]
 	},
-	"browserslist": [
-		"> 1%",
-		"last 2 versions",
-		"not ie <= 8"
-	],
+	"browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
 	"contributors": [
 		{
 			"email": "kp@3yourmind.com",
@@ -20,7 +14,8 @@
 		}
 	],
 	"dependencies": {},
-	"description": "A Vue.js notification plugin with easy installation and usage",
+	"description":
+		"A Vue.js notification plugin with easy installation and usage",
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^3.0.0-beta.6",
 		"@vue/cli-plugin-eslint": "^3.0.0-beta.6",
@@ -35,21 +30,11 @@
 		"vue-template-compiler": "^2.5.13"
 	},
 	"eslintConfig": {
-		"extends": [
-			"plugin:vue/essential",
-			"@vue/prettier"
-		],
+		"extends": ["plugin:vue/essential", "@vue/prettier"],
 		"root": true
 	},
-	"files": [
-		"dist/"
-	],
-	"keywords": [
-		"vue",
-		"component",
-		"notification",
-		"responsive"
-	],
+	"files": ["dist/"],
+	"keywords": ["vue", "component", "notification", "responsive"],
 	"license": "MIT",
 	"main": "dist/index.js",
 	"name": "@3yourmind/vue-yodify",
@@ -61,7 +46,7 @@
 	"prettier": {
 		"arrowParens": "avoid",
 		"bracketSpacing": true,
-		"semi": false,
+		"semi": true,
 		"singleQuote": true,
 		"tabWidth": 2,
 		"trailingComma": "es5",
