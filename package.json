@@ -56,6 +56,8 @@
 		"build":
 			"YODIFY_BUILD_LIBRARY=1 vue-cli-service build --target lib --name vue-yodify source/index.js",
 		"lint": "vue-cli-service lint",
+		"postpublish":
+			"git tag $(node -e \"process.stdout.write(require('./package.json').version)\") && git push --tags",
 		"precommit": "precise-commits && npm run lint",
 		"prepublishOnly": "npm run build",
 		"serve": "vue-cli-service serve"
