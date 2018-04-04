@@ -89,9 +89,7 @@ $unit: 4px;
 }
 
 .vue-yodify__content {
-	width: 400px;
 	flex: 1;
-	background-color: white;
 
 	> div {
 		padding: 0.93em 3em 0.93em 1em;
@@ -99,6 +97,8 @@ $unit: 4px;
 }
 
 .vue-yodify__notification {
+	background-color: white;
+
 	overflow: hidden;
 	margin: #{$unit * 2} 0;
 	width: 448px;
@@ -107,5 +107,12 @@ $unit: 4px;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
+}
+
+// reset some commonly overwritten styles
+.vue-yodify,
+.vue-yodify * {
+	line-height: initial;
+	box-sizing: initial;
 }
 </style>
