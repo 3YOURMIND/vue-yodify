@@ -36,7 +36,7 @@
 	"files": ["dist/"],
 	"keywords": ["vue", "component", "notification", "responsive"],
 	"license": "MIT",
-	"main": "dist/index.js",
+	"main": "dist/vue-yodify.umd.js",
 	"name": "@3yourmind/vue-yodify",
 	"postcss": {
 		"plugins": {
@@ -56,7 +56,8 @@
 		"build": "vue-cli-service build --target lib --name vue-yodify source",
 		"lint": "vue-cli-service lint",
 		"precommit": "precise-commits && npm run lint",
+		"prepublishOnly": "npm run build",
 		"serve": "vue-cli-service serve"
 	},
-	"version": "0.2.0"
+	"version": "0.2.1"
 }
