@@ -69,7 +69,7 @@ this.$yodify({
 <table><thead>
 <tr><th align="center"><a href="https://github.com/igeligel"><img src="https://avatars1.githubusercontent.com/u/12736734?v=4" width="100px;" style="max-width:100%;"><br><sub>igeligel</sub></a><br><p>Contributions: 11</p></th>
 <th align="center"><a href="https://github.com/ostoc"><img src="https://avatars3.githubusercontent.com/u/3025708?v=4" width="100px;" style="max-width:100%;"><br><sub>ostoc</sub></a><br><p>Contributions: 4</p></th>
-<th align="center"><a href="https://github.com/dodekeract"><img src="https://avatars0.githubusercontent.com/u/1133858?v=4" width="100px;" style="max-width:100%;"><br><sub>dodekeract</sub></a><br><p>Contributions: 1</p></th>
+<th align="center"><a href="https://github.com/dodekeract"><img src="https://avatars0.githubusercontent.com/u/1133858?v=4" width="100px;" style="max-width:100%;"><br><sub>dodekeract</sub></a><br><p>Contributions: 2</p></th>
 </thead></table>
 
 ## License

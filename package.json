@@ -52,12 +52,11 @@
 		"trailingComma": "es5",
 		"useTabs": true
 	},
-	"private": true,
 	"scripts": {
 		"build": "vue-cli-service build --target lib --name vue-yodify source",
 		"lint": "vue-cli-service lint",
 		"precommit": "precise-commits && npm run lint",
 		"serve": "vue-cli-service serve"
 	},
-	"version": "0.1.0"
+	"version": "0.2.0"
 }
