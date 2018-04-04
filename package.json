@@ -1,55 +1,63 @@
 {
-  "name": "@3yourmind/vue-yodify",
-  "version": "0.0.2",
-  "description": "A Vue.js component module",
-  "author": "Kevin Peters <kpe@3yourmind.com>",
-  "main": "dist/index.js",
-  "license": "MIT",
-  "scripts": {
-    "build":
-      "cross-env NODE_ENV=production webpack --progress --hide-modules --optimize-minimize",
-    "precommit": "lint-staged",
-    "test": "jest"
-  },
-  "lint-staged": {
-    "*.{js,json,css,md,vue}": ["prettier --write", "git add"]
-  },
-  "keywords": ["vue", "component", "notification", "responsive"],
-  "files": ["dist/"],
-  "dependencies": {
-    "vue": "^2.5.13"
-  },
-  "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.12",
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.4.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-module-resolver": "^3.1.0",
-    "babel-preset-env": "^1.6.1",
-    "cross-env": "^5.1.3",
-    "css-loader": "^0.28.9",
-    "eslint": "^4.18.0",
-    "eslint-plugin-vue": "4.2.2",
-    "file-loader": "^1.1.8",
-    "husky": "^0.14.3",
-    "jest": "^22.4.0",
-    "lint-staged": "^6.1.1",
-    "node-sass": "^4.7.2",
-    "prettier": "^1.10.2",
-    "sass-loader": "^6.0.6",
-    "vue-cli": "^2.9.3",
-    "vue-jest": "^2.1.0",
-    "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13",
-    "vue-template-es2015-compiler": "^1.6.0",
-    "vue-webpack-loaders": "^1.0.6",
-    "webpack": "^3.11.0"
-  },
-  "jest": {
-    "moduleFileExtensions": ["js", "json", "vue"],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    }
-  }
+	"babel": {
+		"presets": ["@vue/app"]
+	},
+	"browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+	"contributors": [
+		{
+			"email": "kp@3yourmind.com",
+			"name": "Kevin Peters"
+		},
+		{
+			"email": "fw@3yourmind.com",
+			"name": "Florian Wendelborn"
+		}
+	],
+	"dependencies": {},
+	"description":
+		"A Vue.js notification plugin with easy installation and usage",
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.0.0-beta.6",
+		"@vue/cli-plugin-eslint": "^3.0.0-beta.6",
+		"@vue/cli-service": "^3.0.0-beta.6",
+		"@vue/eslint-config-prettier": "^3.0.0-beta.6",
+		"husky": "^0.14.3",
+		"node-sass": "^4.7.2",
+		"precise-commits": "^1.0.2",
+		"prettier": "^1.11.1",
+		"sass-loader": "^6.0.6",
+		"vue": "^2.5.16",
+		"vue-template-compiler": "^2.5.13"
+	},
+	"eslintConfig": {
+		"extends": ["plugin:vue/essential", "@vue/prettier"],
+		"root": true
+	},
+	"files": ["dist/"],
+	"keywords": ["vue", "component", "notification", "responsive"],
+	"license": "MIT",
+	"main": "dist/index.js",
+	"name": "@3yourmind/vue-yodify",
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": true,
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 2,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"private": true,
+	"scripts": {
+		"build": "vue-cli-service build --target lib --name vue-yodify source",
+		"lint": "vue-cli-service lint",
+		"precommit": "precise-commits && npm run lint",
+		"serve": "vue-cli-service serve"
+	},
+	"version": "0.1.0"
 }
