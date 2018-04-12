@@ -41,8 +41,15 @@ export default {
 			return `vue-yodify__icon vue-yodify__icon--${notificationStatus}`;
 		},
 	},
-	mounted() {
-		this.registerEventBridge();
+	created() {
+		let notification;
+		while ((notification = this.$yodifyBuffer.pop()))
+			this.addNotification(notification);
+
+		this.$root.$on('vue-yodify', this.addNotification);
+	},
+	beforeDestroy() {
+		this.$root.$off('vue-yodify', this.addNotification);
 	},
 };
 </script>

@@ -1,13 +1,4 @@
 /**
- * @description Creates the event bridge used for forwarding messages to VueYodify
- * @param {Vue} Vue Vue Instance
- * @returns {VueInstance} event bridge
- */
-export const createEventBridge = Vue => ({
-	events: new Vue(),
-});
-
-/**
  * @description generates a random id
  * @param {Number} ID_BITS id entropy in bits, defaults to 64 (4 words)
  * @returns {String} random id
