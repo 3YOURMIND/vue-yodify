@@ -1,19 +1,15 @@
 import VueYodifyComponent from './components/VueYodify.vue';
-import { createEventBridge } from './utilities';
 
 export default {
 	install(Vue) {
 		if (this.installed) return;
 		this.installed = true;
 
-		const eventBridge = createEventBridge(Vue);
-
-		// inject registerEventBridge method into component
-		VueYodifyComponent.methods.registerEventBridge = function() {
-			eventBridge.events.$on('vue-yodify', this.addNotification);
-		};
-
 		Vue.component('vue-yodify', VueYodifyComponent);
+
+		// prevent race condition when emitting
+		// notifications before vue is ready
+		Vue.prototype.$yodifyBuffer = [];
 
 		/**
 		 * @description Function to add payload to queue.
@@ -26,8 +22,16 @@ export default {
 		 * @example { type: 'info', text: 'Info!' }
 		 * @example { text: 'Long Notification', duration: 10000 }
 		 */
-		Vue.prototype.$yodify = ({ duration = 3000, text, type = 'success' }) => {
-			eventBridge.events.$emit('vue-yodify', { text, type, duration });
+		Vue.prototype.$yodify = function({
+			duration = 3000,
+			text,
+			type = 'success',
+		}) {
+			const notification = { duration, text, type };
+
+			// buffer notifications if vue isn't ready
+			if (!this.$root) Vue.prototype.$yodifyBuffer.push(notification);
+			else this.$root.$emit('vue-yodify', notification);
 		};
 	},
 };
