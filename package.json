@@ -5,6 +5,10 @@
 	"browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
 	"contributors": [
 		{
+			"email": "jp@3yourmind.com",
+			"name": "Junyu Pu"
+		},
+		{
 			"email": "kp@3yourmind.com",
 			"name": "Kevin Peters"
 		},
@@ -62,5 +66,5 @@
 		"prepublishOnly": "npm run build",
 		"serve": "vue-cli-service serve"
 	},
-	"version": "0.2.5"
+	"version": "0.2.6"
 }

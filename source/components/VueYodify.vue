@@ -32,7 +32,7 @@ export default {
 		addNotification({ id = generateId(), text, type, duration = 3000 }) {
 			this.queue.push({ id, text, type });
 
-			window.setTimeout(() => this.deleteNotification(id), duration);
+			// window.setTimeout(() => this.deleteNotification(id), duration);
 		},
 		deleteNotification(id) {
 			this.queue = this.queue.filter(notId({ id }));
@@ -64,12 +64,16 @@ $unit: 4px;
 	right: #{$unit * 2};
 }
 
+// .vue-yodify__icon {
+// 	flex: 1 0;
+// }
+
 .vue-yodify__close {
 	$size: 24px;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex: 0 0;
 
 	width: #{$size * 2};
 
@@ -121,5 +125,17 @@ $unit: 4px;
 .vue-yodify * {
 	line-height: initial;
 	box-sizing: initial;
+}
+
+// support for mobile device
+@media (max-width: 460px) {
+	.vue-yodify__notification {
+		width: 96%;
+		margin: 2%;
+	}
+	.vue-yodify {
+		width: 100%;
+		right: 0;
+	}
 }
 </style>
