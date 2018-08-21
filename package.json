@@ -1,8 +1,14 @@
 {
 	"babel": {
-		"presets": ["@vue/app"]
+		"presets": [
+			"@vue/app"
+		]
 	},
-	"browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	],
 	"contributors": [
 		{
 			"email": "jp@3yourmind.com",
@@ -18,8 +24,7 @@
 		}
 	],
 	"dependencies": {},
-	"description":
-		"A Vue.js notification plugin with easy installation and usage",
+	"description": "A Vue.js notification plugin with easy installation and usage",
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^3.0.0-beta.6",
 		"@vue/cli-plugin-eslint": "^3.0.0-beta.6",
@@ -34,11 +39,21 @@
 		"vue-template-compiler": "^2.5.13"
 	},
 	"eslintConfig": {
-		"extends": ["plugin:vue/essential", "@vue/prettier"],
+		"extends": [
+			"plugin:vue/essential",
+			"@vue/prettier"
+		],
 		"root": true
 	},
-	"files": ["dist/"],
-	"keywords": ["vue", "component", "notification", "responsive"],
+	"files": [
+		"dist/"
+	],
+	"keywords": [
+		"vue",
+		"component",
+		"notification",
+		"responsive"
+	],
 	"license": "MIT",
 	"main": "dist/vue-yodify.umd.js",
 	"name": "@3yourmind/vue-yodify",
@@ -57,14 +72,12 @@
 		"useTabs": true
 	},
 	"scripts": {
-		"build":
-			"YODIFY_BUILD_LIBRARY=1 vue-cli-service build --target lib --name vue-yodify source/index.js",
+		"build": "YODIFY_BUILD_LIBRARY=1 vue-cli-service build --target lib --name vue-yodify source/index.js",
 		"lint": "vue-cli-service lint",
-		"postpublish":
-			"git tag $(node -e \"process.stdout.write(require('./package.json').version)\") && git push --tags",
+		"postpublish": "git tag $(node -e \"process.stdout.write(require('./package.json').version)\") && git push --tags",
 		"precommit": "precise-commits && npm run lint",
 		"prepublishOnly": "npm run build",
 		"serve": "vue-cli-service serve"
 	},
-	"version": "0.2.6"
+	"version": "0.2.7"
 }
