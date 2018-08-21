@@ -32,7 +32,7 @@ export default {
 		addNotification({ id = generateId(), text, type, duration = 3000 }) {
 			this.queue.push({ id, text, type });
 
-			// window.setTimeout(() => this.deleteNotification(id), duration);
+			window.setTimeout(() => this.deleteNotification(id), duration);
 		},
 		deleteNotification(id) {
 			this.queue = this.queue.filter(notId({ id }));
