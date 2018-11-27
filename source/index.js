@@ -1,7 +1,7 @@
 import VueYodifyComponent from './components/VueYodify.vue';
 
 export default {
-	install(Vue) {
+	install(Vue, options) {
 		if (this.installed) return;
 		this.installed = true;
 
