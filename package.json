@@ -79,7 +79,7 @@
 		"precommit": "precise-commits && npm run lint",
 		"prepublishOnly": "npm run build",
 		"serve": "vue-cli-service serve",
-		"tagversion": "git tag kotti-$(node -p \"require('./package.json').version\")"
+		"tagversion": "git tag $(node -p \"require('./package.json').version\")"
 	},
-	"version": "0.2.8"
+	"version": "0.2.9"
 }
