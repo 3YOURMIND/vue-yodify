@@ -1,5 +1,9 @@
 # vue-yodify by <a href="https://www.3yourmind.com/">3YOURMIND</a>
 
+## Important
+
+`vue-yodify` has been merged to [Kotti](https://3yourmind.github.io/kotti/components/toaster). New updates will only be avialable through `Kotti-UI`
+
 ## Description
 
 > A simple Vue.js plugin to enable notifications with ease.
